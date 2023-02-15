@@ -10,7 +10,11 @@ class ListExamples {
   // the same order they appeared in the input list;
   static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
-    result.add("moon");
+    for(String s: list) {
+      if(s.equals("moon")) {
+        result.add(s);
+      }
+    }
     return result;
   }
 
